@@ -1,4 +1,6 @@
-/* we’d like the behavior of the scroll to be as fluid as possible. */
+/* File: smooth-scroll.css */
+
+/* Apply smooth scrolling behavior on the entire document */
 html {
     scroll-behavior: smooth;
 }
