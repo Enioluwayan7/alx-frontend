@@ -1,3 +1,4 @@
+/* we’d like the behavior of the scroll to be as fluid as possible. */
 * {
     scroll-behavior: smooth;
 }
