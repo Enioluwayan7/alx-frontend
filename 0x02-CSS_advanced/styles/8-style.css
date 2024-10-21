@@ -37,8 +37,10 @@ body {
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
+    /* minimum height of line boxes */
     min-height: var(--line-height-base);
 }
+
 a {
     color: var(--text-color);
 }
