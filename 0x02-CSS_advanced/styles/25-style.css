@@ -424,7 +424,7 @@ html {
     /*Button*/
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
-    --button-padding: 0.2rem solid var(--color-primary);
+    --button-border: 0.2rem solid var(--color-primary);
     --button-color: var(--color-black);
     --button-text-decoration: none;
     --button-font-size: var(--font-size-large);
@@ -491,18 +491,19 @@ a[href]:active {
 }
 
 .button {
-    display: var(--button-display);
-    padding: var(--button-padding);
-    border-style: var(--button-border);
-    font-size: var(--button-font-size);
-    color: var(--button-color);
-    text-decoration: var(--button-text-decoration);
+    display: var(--button-display); /* Set display using button-display variable */
+    padding: var(--button-padding); /* Set padding using button-padding variable */
+    border: var(--button-border); /* Set border using button-border variable */
+    font-size: var(--button-font-size); /* Set font size using button-font-size variable */
+    color: var(--button-color); /* Set text color using button-color variable */
+    text-decoration: var(--button-text-decoration); /* Set text decoration using button-text-decoration variable */
 }
 
+/* Hover state of the button class */
 .button:hover {
-    color: var(--button-hover-color);
+    color: var(--button-hover-color); 
     text-decoration: var(--button-hover-text-decoration);
-    background: var(--button-hover-background);
+    background-color: var(--button-hover-background); 
 }
 
 .visually-hidden {
