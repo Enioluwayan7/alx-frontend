@@ -21,7 +21,7 @@ html {
 */
 
 body {
-margin: 0;
+  margin: 0;
 }
 
 /**
@@ -663,16 +663,15 @@ ul.row{
   display: block;
   padding-top: 1rem;
   color: var(--color-primary);
+}
+
+.card-testimonial .card-quote {
   position: relative;
 }
 
 .card-testimonial .card-quote::before{
   content: "\201C";
   position: absolute;
-}
-
-.card-work .card-outer {
-  position: relative;
   top: -4.5rem;
   left: -1rem;
   color: #efeded;
@@ -680,8 +679,13 @@ ul.row{
   z-index: -1;
 }
 
+.card-work .card-outer {
+  position: relative;
+  overflow: hidden;
+}
+
 .card-work .card-image img{
-  height: 300rem;
+  height: 30rem;
   width: 100%;
   object-fit: cover;
   vertical-align: bottom;
